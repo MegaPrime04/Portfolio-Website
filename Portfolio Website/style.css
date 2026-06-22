@@ -18,7 +18,7 @@ body {
     background-color: var(--background);
 }
 
-nav, .nav-links{
+nav {
     position: fixed;
     top: 0;
     width: 100%;
