@@ -48,8 +48,8 @@ nav ul a:hover{
 }
 
 .logo{
-    font-size: 2em
-    text-color white;
+    font-size: 2em;
+    color: white;
     font-weight: 800;
     opacity: 0.8;
     transition: 0.2s ease-in-out;
@@ -77,9 +77,10 @@ nav ul a:hover{
 }
 
 span{
-    background-color: linear-gradient(to right,#6cff52, #3ec5ff);
+    background: linear-gradient(to right,#6cff52, #3ec5ff);
+    -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #menu{
