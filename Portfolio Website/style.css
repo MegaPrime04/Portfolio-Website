@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,6 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif, monospace;
 }
 
 :root{
@@ -13,9 +14,14 @@
     --second-background: rgb(21,21,21);
 }
 
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -35,6 +41,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 3em;
+    font-size: 1.5em;
 }
 
 nav ul a{
@@ -59,19 +66,21 @@ nav ul a:hover{
     opacity: 1;
 }
 
-.btn{
+.contact-btn, .hire-btn, .contact-2-btn, .submit-btn{
     padding: 0.5em 1em;
     color: white;
     font-weight: 500;
     letter-spacing: 1px;
-    border-radius: 0.5em;
+    border-radius: 1em;
     font-size: 1.1em;
     border: 2px solid white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.btn:hover{
+.contact-btn:hover,
+.submit-btn:hover,
+.hire-btn:hover{
     background-color: white;
     color: var(--background);
 }
@@ -87,6 +96,7 @@ span{
     color: white;
     font-size: 3em;
     display: none;
+    cursor: pointer;
 }
 
 section{
@@ -136,14 +146,24 @@ section{
     gap: 1em;
 }
 
-.btn-box .btn:nth-of-type(2){
+.btn-box .contact-2-btn, .hire-btn{
     background: white;
     color: var(--background);
 }
 
-.btn-box .btn:nth-of-type(2):hover{
+.btn-box .contact-2-btn:hover,
+.hire-btn,
+.submit-btn{
     background: var(--background);
     color: white;
+}
+
+#success-message{
+    display: none;
+    color: limegreen;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 ::-webkit-scrollbar{
@@ -291,7 +311,12 @@ form .input-box{
     font-size: 1.5em;
 }
 
-form input{
+textarea::placeholder{
+    font-size: 1.2em;
+}
+
+form input, textarea{
+    font-family: inherit;
     font-size: 1.3em;
     padding: 1em 5em;
     border-radius: 0.5em;
@@ -299,7 +324,8 @@ form input{
     outline: none;
 }
 
-form input:focus{
+form input:focus, 
+form textarea:focus{
     background: rgb(229, 229, 229)
 }
 
@@ -390,7 +416,7 @@ footer{
     .links a{
         margin: 2em 0;
         display: block;
-        font-size: 1.5em;
+        font-size: 0.8em;
         color: white;
     }
     .links.active{

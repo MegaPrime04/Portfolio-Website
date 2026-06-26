@@ -6,14 +6,10 @@
     <meta name="author" content="Portfolio Website">
     <meta name="description" content="Modern Responsive Portfolio Website">
     <title>My Portfolio Website</title>
-    <link rel="stylesheet" href="/Portfolio Website/style.css">
+    
+    <link rel="stylesheet" href="/style.css">
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 <body>
@@ -39,12 +35,12 @@
                 </li>
 
                 <li>
-                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="https://wa.me/2347033093591?text=Hello%20Cyriacus,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" class="contact-btn">Contact Me</a>
                 </li>
             
             </ul>
 
-            <i class="bi bi-menu-app" id="menu"></i>
+            <i class="bi bi-list" id="menu"></i>
 
         </nav>
 
@@ -56,16 +52,18 @@
         <div class="info-box">
             <h1><span>Hello, I'm Ezeibe Ifenna Cyriacus</span></h1>
 
-            <h3><span>Front-End Developer</span>, based in Anambra State, Nigeria</h3>
+            <h3><span>Front-End Web Developer</span>, based in Anambra State, Nigeria</h3>
 
             <p>
-                I'm a passionate web developer with an experience of 2 years and a strong interest in creating responsive, user-friendly, and visually appealing websites. I enjoy transforming ideas into functional digital experiences using modern web technologies. Constantly learning and improving my skills in HTML, CSS, JavaScript and other frameworks. I am dedicated to building websites that deliver performance, accessibility, and great user experiences.
+                I create responsive, modern and user-friendly websites that deliver exceptional digital experiences through clean code and thoughtful design.
             </p>
         </div>
 
         <div class="btn-box">
-            <div class="btn">Hire</div>
-            <div class="btn">Contact Me</div>
+            <button class="hire-btn">Hire Me</button>
+            <a href="https://wa.me/2347033093591?text=Hello%20Cyriacus,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" class="contact-2-btn">
+                Contact Me
+            </a>
         </div>
 
     </section>
@@ -75,8 +73,7 @@
             <div class="about-info">
                 <h1><span>About Me</span></h1>
                 <p>
-                    I am a dedicated web developer with a passion for building innovative and user-centered web solutions. From designing intuitive interfaces to developing functional and responsive websites.
-                    <br>I enjoy every stage of the development process. My goal is to create digital experiences that combine creativity, functionality, and efficiency while meeting the unique needs of users and clients.
+                    I am a dedicated Front-End Web Developer who enjoys creating responsive, user-friendly and visually appealing websites. I specialize in building modern web interfaces using HTML, CSS, JavaScript and framework like React, with a strong focus on clean code, performance and accessibility. i'm committed in exploring new technologies and transforming ideas into engaging digital experiences.
                 </p>
             </div>
 
@@ -179,24 +176,32 @@
 
         <h1 class="header"><span>Contact</span></h1>
 
-        <form action="#">
+        <form id="contact-form" action="https://formspree.io/f/mgojowya" method="POST">
+
             <div class="input-box">
                 <span>Full Name</span>
-                <input type="text" placeholder="Enter Your Full Name">
+                <input type="text" name="name" placeholder="Enter Your Full Name" required>
             </div>
 
             <div class="input-box">
                 <span>Your Email</span>
-                <input type="text" placeholder="Enter Your Email">
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="input-box">
+                <span>Project Details</span>
+                <input type="text" name="project_details" placeholder="Enter Your Project Details" required>
             </div>
 
             <div class="input-box">
                 <span>Your Message</span>
-                <input type="text" placeholder="Enter Your Message">
+                <textarea name="message" id="message" cols="20" rows="10" placeholder="Type Your Message" required></textarea>
             </div>
 
-            <div class="btn">Submit</div>
+            <button type="submit" class=" submit-btn">Submit</button>
         </form>
+
+        <p id="success-message"></p>
 
     </section>
 
@@ -233,22 +238,33 @@
 
             <div class="social-icons">
                 <span>
-                    <i class="bi bi-facebook"></i>
+                    <a href="https://github.com/MegaPrime04" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
                 </span>
+
                 <span>
-                    <i class="bi bi-whatsapp"></i>
+                    <a href="https://wa.me/2347033093591?text=Hello%20Cyriacus,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
                 </span>
+                
                 <span>
-                    <i class="bi bi-instagram"></i>
+                    <a href="https://x.com/MegaPrime04" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
                 </span>
+                
                 <span>
-                    <i class="bi bi-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/ifenna-ezeibe" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
                 </span>
             </div>
         </div>
     </footer>
 
 
-    <script src="/Portfolio Website/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
