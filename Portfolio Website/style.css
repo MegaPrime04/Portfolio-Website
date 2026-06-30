@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -10,18 +9,22 @@
 }
 
 :root{
-    --background: rgb(24, 24, 24);
-    --second-background: rgb(21,21,21);
+    --background: rgb(139, 127, 127);
+    --second-background: rgb(122, 133, 132);
 }
 
-h1, h2, h3{
-    font-family: 'Playfair Display', serif;
+h1, h2, h3, p{
+    font-family: 'Playfair Display', sans-serif;
 }
 
 body {
     min-height: 100vh;
     background-color: var(--background);
     font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 1.3em;
 }
 
 nav {
@@ -32,7 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(15,15,15, 0.8);
+    background-color: rgb(102, 85, 85);
     backdrop-filter: blur(10PX);
     z-index: 1000;
 }
@@ -41,7 +44,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 3em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 nav ul a{
@@ -114,7 +117,7 @@ section{
 }
 
 #home img{
-    width: 18vw;
+    width: 20vw;
     border-radius: 50%;
     margin-top: 3em;
 }
@@ -184,7 +187,7 @@ section{
 }
 
 #about img{
-    width: 30vw;
+    width: 50vw;
     border-radius: 5%;
 }
 
@@ -192,6 +195,7 @@ section{
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 2rem;
     gap: 2em;
 }
 
@@ -207,7 +211,7 @@ section{
 .skills{
     display: flex;
     text-align: left;
-    gap: 10em;
+    gap: 2em;
 }
 
 .skills ul{
@@ -259,6 +263,7 @@ section{
 .box{
     border: 3px solid rgb(49, 49, 49);
     border-radius: 0.5em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,6 +302,9 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100;
+    max-width: 600px;
+    margin: 0 auto;
     gap: 2em;
 }
 
@@ -357,7 +365,8 @@ footer{
 }
 
 .col-box span{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-style: italic;
 }
 
 .col-right{
@@ -369,7 +378,8 @@ footer{
 }
 
 .col-right span{
-    font-size: 1.3em;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .col-right .social-icons{
@@ -433,16 +443,34 @@ footer{
     }
 
     #about{
+        display: flex;
         flex-direction: column;
+        margin: 1.5rem 0;
     }
     #about img{
-        width: 32vw;
+        width: 80vw;
     }
     #about h1{
         font-size: 3em;
     }
     #about ul{
         font-size: 1em;
+    }
+
+    #contact .header{
+        font-size: 3em;
+    }
+
+    #contact .input-box span{
+        font-size: 1.3em;
+    }
+
+    #contact input, textarea{
+        padding: 1em 2em;
+    }
+
+    .input-box span{
+        padding: 0.5em 1em;
     }
 }
 
@@ -455,6 +483,19 @@ footer{
     }
     #home img{
         width: 32vw;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+
+    #about img{
+        order: -1;
+        width: 80vw;
+        max-width: 300px;
+        margin: 1.5rem auto;
     }
 
     #about .skills{
@@ -473,6 +514,10 @@ footer{
         font-size: 1.2em;
     }
 
+    #contact input, textarea{
+        padding: 1em 2em;
+    }
+    
     .input-box span{
         padding: 0.5em 1em;
     }
