@@ -195,8 +195,7 @@ section{
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
-    gap: 2em;
+     gap: 2em;
 }
 
 .about-box h1{
@@ -261,7 +260,7 @@ section{
 }
 
 .box{
-    border: 3px solid rgb(49, 49, 49);
+    border: 3px solid rgb(126, 107, 107);
     border-radius: 0.5em;
     margin-bottom: 2em;
     display: flex;
@@ -445,7 +444,6 @@ footer{
     #about{
         display: flex;
         flex-direction: column;
-        margin: 1.5rem 0;
     }
     #about img{
         width: 80vw;
@@ -488,7 +486,6 @@ footer{
     #about{
         display: flex;
         flex-direction: column;
-        margin: 1.5rem 0;
     }
 
     #about img{
